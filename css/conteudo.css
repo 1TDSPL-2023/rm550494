@@ -1,0 +1,17 @@
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.conteudo > div img{
+ display: block;
+ max-width: 100%;
+}
+
+.conteudo > div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
