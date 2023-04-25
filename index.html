@@ -30,7 +30,7 @@
     <!-- section.conteudo>div*6>img+p{Legenda} -->
     <section class="conteudo">
         <div>
-            <img src="./img/poke.img" alt="Pokemon">
+            <img src="./img/lobo1.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
@@ -66,7 +66,7 @@
         </nav>
 
         <div>
-            <form action="" method="get" onsubmit="return false">
+            <form action="/gabriel" method="post" onsubmit="return true">
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
@@ -74,8 +74,12 @@
                         <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
                     </div>
                     <div>
-                        <label for="idNome">Nome</label>
-                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
+                    </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
                     </div>
                     <div>
                         <input type="submit" value="Enviar">
