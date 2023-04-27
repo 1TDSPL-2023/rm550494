@@ -17,7 +17,20 @@ html{
     text-align: center;
     font-size: 5rem;
 }
-
+.rodape{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.rodape nav{
+  display: flex;
+}
+.rodape nav img{
+  max-width: 10%;
+  display:block; 
+}
 /* vw = View Width
 vh = View height 
     
