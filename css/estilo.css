@@ -2,6 +2,7 @@
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
 @import url("./rodape.css");
+@import url("./break-point-630px.css");
 
 *{
   margin:0;
@@ -17,28 +18,27 @@ html{
     text-align: center;
     font-size: 5rem;
 }
-.rodape{ 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
+
+/* TABELA */ 
+table{
+  border-collapse: collapse;
+  margin: 5% auto;
 }
-.rodape nav{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+td,th{
+  border:1px solid #e48c8c; 
+  padding: 8px;
 }
-.rodape nav img{
-  max-width: 10%;
-  display:block; 
+tr:nth-child(even){
+  background-color: #ffcbcb;
 }
-.rodape nav a{
-  padding: 5% 0;
-  width: 100%;
+tr:nth-child(odd){
+  background-color: pink;
 }
-.rodape nav a:hover{
-  background-color: black;
+tr:hover{
+  background-color: plum;
+}
+td[colspan]{
+  text-align: center;
 }
 /* vw = View Width
 vh = View height 
