@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/login.css">
+
+    <script src="./js/login.js" defer></script>
+
+    <title>Entrar</title>
+</head>
+<body>
+    
+    <!--  <div class="form">
+        <form action="/gabriel" method="get" onsubmit="return false">
+            <fieldset>
+                <legend>Entrar</legend>
+                <div>
+                    <label for="idEmail">Email</label>
+                    <input type="text" name="txtEmail" id="idEmail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="idPass">Senha</label>
+                    <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                </div>
+                <div>
+                    <label for="idGrava">Guardar Dados</label>
+                    <input type="checkbox" name="txtGrava" id="idGrava">
+                </div>
+                <div>
+                    <button type="submit" id="btnSubmit">Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div> --> 
+    <div>
+        <form action="" method="get" onsubmit="return false">
+            <div>
+                <input type="text" name="visor" id="idVisor" placeholder="Numeros">
+            </div>
+            <div>
+                <button type="button" value="1" id="btn1" onclick="insereNumero(this.id,'idVisor')">1</button>
+                <button type="button" value="2" id="btn2" onclick="insereNumero(this.id,'idVisor')">2</button>
+                <button type="button" value="3" id="btn3" onclick="insereNumero(this.id,'idVisor')">3</button>
+                <button type="button" value="4" id="btn4" onclick="insereNumero(this.id,'idVisor')">4</button>
+                <button type="button" value="5" id="btn5" onclick="insereNumero(this.id,'idVisor')">5</button>
+                <button type="button" value="6" id="btn6" onclick="insereNumero(this.id,'idVisor')">6</button>
+                <button type="button" value="7" id="btn7" onclick="insereNumero(this.id,'idVisor')">7</button>
+                <button type="button" value="8" id="btn8" onclick="insereNumero(this.id,'idVisor')">8</button>
+                <button type="button" value="9" id="btn9" onclick="insereNumero(this.id,'idVisor')">9</button>
+                <button type="button" value="0" id="btn0" onclick="insereNumero(this.id,'idVisor')">0</button>
+            </div>
+            <div>
+                <button type="button" value="+" id="btnSoma" onclick="insereNumero(this.id,'idVisor')">+</button>
+                <button type="button" value="-" id="btnSubtrair" onclick="insereNumero(this.id,'idVisor')">-</button>
+                <button type="button" value="*" id="btnMultiplicar" onclick="insereNumero(this.id,'idVisor')">x</button>
+                <button type="button" value="/" id="btnDivisao" onclick="insereNumero(this.id,'idVisor')">+</button>
+            </div>
+                <button type="button" value="=" id="btnIgual" onclick="resultado('idVisor')">=</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
