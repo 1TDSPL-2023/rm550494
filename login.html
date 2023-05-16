@@ -35,30 +35,32 @@
             </fieldset>
         </form>
     </div> --> 
-    <div>
+
+    <div class="form">
         <form action="" method="get" onsubmit="return false">
-            <div>
+            <div class="visor-calc">
                 <input type="text" name="visor" id="idVisor" placeholder="Numeros">
             </div>
             <div>
-                <button type="button" value="1" id="btn1" onclick="insereNumero(this.id,'idVisor')">1</button>
-                <button type="button" value="2" id="btn2" onclick="insereNumero(this.id,'idVisor')">2</button>
-                <button type="button" value="3" id="btn3" onclick="insereNumero(this.id,'idVisor')">3</button>
-                <button type="button" value="4" id="btn4" onclick="insereNumero(this.id,'idVisor')">4</button>
-                <button type="button" value="5" id="btn5" onclick="insereNumero(this.id,'idVisor')">5</button>
-                <button type="button" value="6" id="btn6" onclick="insereNumero(this.id,'idVisor')">6</button>
-                <button type="button" value="7" id="btn7" onclick="insereNumero(this.id,'idVisor')">7</button>
-                <button type="button" value="8" id="btn8" onclick="insereNumero(this.id,'idVisor')">8</button>
-                <button type="button" value="9" id="btn9" onclick="insereNumero(this.id,'idVisor')">9</button>
-                <button type="button" value="0" id="btn0" onclick="insereNumero(this.id,'idVisor')">0</button>
+                <button type="button" value="1" id="btn1" onclick="insereNumero(thisidVisor)">1</button>  <!-- button é o nosso this -->
+                <button type="button" value="2" id="btn2" onclick="insereNumero(this,idVisor)">2</button>
+                <button type="button" value="3" id="btn3" onclick="insereNumero(this,idVisor)">3</button>
+                <button type="button" value="4" id="btn4" onclick="insereNumero(this,idVisor)">4</button>
+                <button type="button" value="5" id="btn5" onclick="insereNumero(this,idVisor)">5</button>
+                <button type="button" value="6" id="btn6" onclick="insereNumero(this,idVisor)">6</button>
+                <button type="button" value="7" id="btn7" onclick="insereNumero(this,idVisor)">7</button>
+                <button type="button" value="8" id="btn8" onclick="insereNumero(this,idVisor)">8</button>
+                <button type="button" value="9" id="btn9" onclick="insereNumero(this,idVisor)">9</button>
+                <button type="button" value="0" id="btn0" onclick="insereNumero(this,idVisor)">0</button>
             </div>
             <div>
-                <button type="button" value="+" id="btnSoma" onclick="insereNumero(this.id,'idVisor')">+</button>
-                <button type="button" value="-" id="btnSubtrair" onclick="insereNumero(this.id,'idVisor')">-</button>
-                <button type="button" value="*" id="btnMultiplicar" onclick="insereNumero(this.id,'idVisor')">x</button>
-                <button type="button" value="/" id="btnDivisao" onclick="insereNumero(this.id,'idVisor')">+</button>
+                <button type="button" value="+" id="btnSoma" onclick="insereNumero(this,idVisor)">+</button>
+                <button type="button" value="-" id="btnSubtrair" onclick="insereNumero(this,idVisor)">-</button>
+                <button type="button" value="*" id="btnMultiplicar" onclick="insereNumero(this,idVisor)">x</button>
+                <button type="button" value="/" id="btnDivisao" onclick="insereNumero(this,idVisor)">+</button>
             </div>
-                <button type="button" value="=" id="btnIgual" onclick="resultado('idVisor')">=</button>
+                <button type="button" value="=" id="btnIgual" onclick="resultado(idVisor)">=</button>
+                <button type="reset" id="btnLimpar">C</button>
             </div>
         </form>
     </div>
